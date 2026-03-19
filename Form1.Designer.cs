@@ -28,12 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            lbTitle = new Label();
+            txtSubmit = new TextBox();
+            lstMsgWindow = new ListBox();
+            btSend = new Button();
+            SuspendLayout();
+            // 
+            // lbTitle
+            // 
+            lbTitle.AutoSize = true;
+            lbTitle.Font = new Font("한컴 말랑말랑 Bold", 28F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            lbTitle.Location = new Point(48, 29);
+            lbTitle.Name = "lbTitle";
+            lbTitle.Size = new Size(465, 72);
+            lbTitle.TabIndex = 0;
+            lbTitle.Text = "Echo Messenger";
+            lbTitle.Click += label1_Click;
+            // 
+            // txtSubmit
+            // 
+            txtSubmit.Font = new Font("한컴 말랑말랑 Regular", 18F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            txtSubmit.Location = new Point(48, 608);
+            txtSubmit.Name = "txtSubmit";
+            txtSubmit.Size = new Size(772, 54);
+            txtSubmit.TabIndex = 1;
+            txtSubmit.TextChanged += textBox1_TextChanged;
+            // 
+            // lstMsgWindow
+            // 
+            lstMsgWindow.Font = new Font("한컴 말랑말랑 Regular", 20F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            lstMsgWindow.FormattingEnabled = true;
+            lstMsgWindow.Location = new Point(48, 139);
+            lstMsgWindow.Name = "lstMsgWindow";
+            lstMsgWindow.Size = new Size(1043, 420);
+            lstMsgWindow.TabIndex = 2;
+            // 
+            // btSend
+            // 
+            btSend.Font = new Font("한컴 말랑말랑 Bold", 16F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btSend.Location = new Point(877, 590);
+            btSend.Name = "btSend";
+            btSend.Size = new Size(214, 90);
+            btSend.TabIndex = 3;
+            btSend.Text = "button1";
+            btSend.UseVisualStyleBackColor = true;
+            btSend.Click += btSend_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            ClientSize = new Size(1176, 717);
+            Controls.Add(btSend);
+            Controls.Add(lstMsgWindow);
+            Controls.Add(txtSubmit);
+            Controls.Add(lbTitle);
+            Name = "Form1";
+            Text = "Echo Messenger";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lbTitle;
+        private TextBox txtSubmit;
+        private ListBox lstMsgWindow;
+        private Button btSend;
     }
 }

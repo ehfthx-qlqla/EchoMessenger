@@ -62,6 +62,7 @@
             lstMsgWindow.Name = "lstMsgWindow";
             lstMsgWindow.Size = new Size(1043, 420);
             lstMsgWindow.TabIndex = 2;
+            lstMsgWindow.SelectedIndexChanged += lstMsgWindow_SelectedIndexChanged;
             // 
             // btSend
             // 
@@ -76,6 +77,7 @@
             // 
             // Form1
             // 
+            AcceptButton = btSend;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1176, 717);

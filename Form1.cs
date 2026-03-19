@@ -24,6 +24,10 @@ namespace EchoMessenger
             string typed_msg; 
             typed_msg = txtSubmit.Text;
             lstMsgWindow.Items.Add(typed_msg);
+
+            txtSubmit.Text = "";
+
+            txtSubmit.Focus();
         }
     }
 }

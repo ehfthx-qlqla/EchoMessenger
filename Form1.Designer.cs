@@ -70,7 +70,7 @@
             btSend.Name = "btSend";
             btSend.Size = new Size(214, 90);
             btSend.TabIndex = 3;
-            btSend.Text = "button1";
+            btSend.Text = "전송";
             btSend.UseVisualStyleBackColor = true;
             btSend.Click += btSend_Click;
             // 
